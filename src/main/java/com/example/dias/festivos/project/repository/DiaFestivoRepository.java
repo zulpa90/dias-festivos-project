@@ -9,4 +9,8 @@ public interface DiaFestivoRepository extends Repository<DiaFestivoData, Integer
     DiaFestivoData findByMesAndDia(int mes, int dia);
 
     List<DiaFestivoData> findAllByIdTipo(int idTipo);
+
+    List<DiaFestivoData> findAll();
+
+
 }

@@ -8,4 +8,10 @@ public interface DiaFestivoGatewayRepository {
 
     DiaFestivoData consultarDiaFestivo (int mes, int dia);
     List<DiaFestivoData> consultarFechasPorIdTipoFestivo(int tipoFecha);
+    List<DiaFestivoData> consultarDiasFestivosAnio();
+
+
 }
+
+
+

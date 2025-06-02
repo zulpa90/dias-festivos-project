@@ -23,4 +23,11 @@ public class DiaFestivoRepositoryAdapter implements DiaFestivoGatewayRepository 
     public List<DiaFestivoData> consultarFechasPorIdTipoFestivo(int tipoFecha) {
         return diaFestivoRepository.findAllByIdTipo(tipoFecha);
     }
+
+    @Override
+    public List<DiaFestivoData> consultarDiasFestivosAnio() {
+        return diaFestivoRepository.findAll();
+    }
+
+
 }
